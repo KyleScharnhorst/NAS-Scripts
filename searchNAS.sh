@@ -7,4 +7,4 @@ for i; do
 done
 
 echo Searching for $ARGS
-locate -i -r "^/mnt/disk$ARGS" | grep -Ev ".r\d*$|.jpg$|.nfo$|.torrent$|.png$|.sfv$"
+locate -i -r "^/mnt/disk$ARGS" | grep -Ev ".r[0-9]*$|.jpg$|.nfo$|.torrent$|.png$|.sfv$"
